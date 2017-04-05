@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Viewable Menu View Controller-->
+        <scene sceneID="QTT-F6-8JY">
+            <objects>
+                <viewController storyboardIdentifier="ViewableMenuViewController" id="Reg-62-WCM" customClass="ViewableMenuViewController" customModule="Restaurant_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="605-ME-G5V"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vS-Fy-o2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1z-VN-o6y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nqw-xb-yMf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="10" id="yT6-Gs-2Mh">
+                                    <size key="itemSize" width="305" height="480"/>
+                                    <size key="headerReferenceSize" width="0.0" height="80"/>
+                                    <size key="footerReferenceSize" width="0.0" height="16"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewableMenuCell" id="VAT-1N-svd">
+                                        <rect key="frame" x="35" y="80" width="305" height="480"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="305" height="480"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewableHeader" id="acE-7F-GeH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="viewableFooter" id="7nW-VP-1kt">
+                                    <rect key="frame" x="0.0" y="560" width="375" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nqw-xb-yMf" firstAttribute="top" secondItem="e1z-VN-o6y" secondAttribute="top" id="TFH-rr-dpu"/>
+                            <constraint firstItem="7vS-Fy-o2i" firstAttribute="top" secondItem="nqw-xb-yMf" secondAttribute="bottom" id="YOT-il-hSS"/>
+                            <constraint firstItem="nqw-xb-yMf" firstAttribute="leading" secondItem="e1z-VN-o6y" secondAttribute="leading" id="btp-Rp-qwW"/>
+                            <constraint firstAttribute="trailing" secondItem="nqw-xb-yMf" secondAttribute="trailing" id="gwR-To-Wf8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="nqw-xb-yMf" id="yvc-Ax-ioB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGR-XS-LFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="-496.10194902548727"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SegoeWP-Semibold.ttf">
+            <string>SegoeWP-Semibold</string>
+        </array>
+        <array key="SegoeWP-Semilight.ttf">
+            <string>SegoeWP-SemiLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="hGa-vJ-ALh">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="FwX-Pt-BII" customClass="ContactViewController" customModule="Restaurant_Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hcV-Ew-UNP"/>
+                        <viewControllerLayoutGuide type="bottom" id="i4P-aQ-75M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hoR-iZ-xWt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpz-3X-nS5" customClass="MapView" customModule="Restaurant_Template" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Arl-8z-AOH"/>
+                                </constraints>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abU-iX-8u1">
+                                <rect key="frame" x="0.0" y="214" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gl8-1l-h0k">
+                                <rect key="frame" x="0.0" y="214" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcb-Fu-aPF">
+                                        <rect key="frame" x="0.0" y="7" width="94" height="30"/>
+                                        <state key="normal" title="Address">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changingPage:" destination="FwX-Pt-BII" eventType="touchUpInside" id="INF-N8-6XF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-Jn-D10">
+                                        <rect key="frame" x="94" y="7" width="93.5" height="30"/>
+                                        <state key="normal" title="Info">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changingPage:" destination="FwX-Pt-BII" eventType="touchUpInside" id="x9l-WR-kxP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdY-Y0-Gbf">
+                                        <rect key="frame" x="187.5" y="7" width="94" height="30"/>
+                                        <state key="normal" title="Contact">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changingPage:" destination="FwX-Pt-BII" eventType="touchUpInside" id="ws1-hZ-4qR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-Fa-Xjp">
+                                        <rect key="frame" x="281.5" y="7" width="93.5" height="30"/>
+                                        <state key="normal" title="Hours">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changingPage:" destination="FwX-Pt-BII" eventType="touchUpInside" id="yDi-yi-uZg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hno-cM-T5d"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pbe-m5-pEx">
+                                <rect key="frame" x="0.0" y="258" width="375" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addressCell" textLabel="FZ1-16-o6T" style="IBUITableViewCellStyleDefault" id="qNc-pS-ftg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qNc-pS-ftg" id="1uD-5s-O2N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FZ1-16-o6T">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
+                                                    <fontDescription key="fontDescription" name="SegoeWP-Semibold" family="Segoe WP Semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="infoCell" textLabel="wtW-lv-V2H" detailTextLabel="yhV-x1-cTb" style="IBUITableViewCellStyleValue1" id="0ml-hj-Ir3">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ml-hj-Ir3" id="MrY-ad-lR1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wtW-lv-V2H">
+                                                    <rect key="frame" x="15" y="9" width="39.5" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="SegoeWP-Semibold" family="Segoe WP Semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhV-x1-cTb">
+                                                    <rect key="frame" x="310.5" y="9" width="49.5" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="SegoeWP-SemiLight" family="Segoe WP SemiLight" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactCell" textLabel="qee-NB-R58" style="IBUITableViewCellStyleDefault" id="gqO-Zb-sKw">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gqO-Zb-sKw" id="MSg-L3-gAi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qee-NB-R58">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="SegoeWP-SemiLight" family="Segoe WP SemiLight" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hourCell" textLabel="hxG-HW-tQV" style="IBUITableViewCellStyleDefault" id="5sF-dE-vOI">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5sF-dE-vOI" id="wU2-fy-UpI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hxG-HW-tQV">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="SegoeWP-SemiLight" family="Segoe WP SemiLight" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="abU-iX-8u1" firstAttribute="trailing" secondItem="gl8-1l-h0k" secondAttribute="trailing" id="3Z8-1E-SeW"/>
+                            <constraint firstItem="pbe-m5-pEx" firstAttribute="top" secondItem="gl8-1l-h0k" secondAttribute="bottom" id="7oU-IO-Fli"/>
+                            <constraint firstItem="abU-iX-8u1" firstAttribute="leading" secondItem="gl8-1l-h0k" secondAttribute="leading" id="IdX-Pn-qsA"/>
+                            <constraint firstItem="gl8-1l-h0k" firstAttribute="top" secondItem="wpz-3X-nS5" secondAttribute="bottom" id="QGU-xD-zbG"/>
+                            <constraint firstAttribute="trailing" secondItem="pbe-m5-pEx" secondAttribute="trailing" id="T5L-30-SUl"/>
+                            <constraint firstItem="pbe-m5-pEx" firstAttribute="leading" secondItem="hoR-iZ-xWt" secondAttribute="leading" id="Yvd-o8-HoV"/>
+                            <constraint firstItem="i4P-aQ-75M" firstAttribute="top" secondItem="pbe-m5-pEx" secondAttribute="bottom" id="b0g-Qv-jF0"/>
+                            <constraint firstAttribute="trailing" secondItem="gl8-1l-h0k" secondAttribute="trailing" id="b9h-0A-87n"/>
+                            <constraint firstItem="wpz-3X-nS5" firstAttribute="leading" secondItem="hoR-iZ-xWt" secondAttribute="leading" id="iHl-vy-OtA"/>
+                            <constraint firstItem="abU-iX-8u1" firstAttribute="height" secondItem="gl8-1l-h0k" secondAttribute="height" id="iez-DZ-xm9"/>
+                            <constraint firstItem="wpz-3X-nS5" firstAttribute="top" secondItem="hcV-Ew-UNP" secondAttribute="bottom" constant="44" id="kMV-5y-x0D"/>
+                            <constraint firstItem="abU-iX-8u1" firstAttribute="top" secondItem="gl8-1l-h0k" secondAttribute="top" id="ood-2d-unn"/>
+                            <constraint firstAttribute="trailing" secondItem="wpz-3X-nS5" secondAttribute="trailing" id="q8J-hF-ht1"/>
+                            <constraint firstItem="gl8-1l-h0k" firstAttribute="leading" secondItem="hoR-iZ-xWt" secondAttribute="leading" id="riE-7Y-gkt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsBackground" destination="abU-iX-8u1" id="kaX-Sc-jLj"/>
+                        <outlet property="mapView" destination="wpz-3X-nS5" id="fZl-al-z2m"/>
+                        <outlet property="tableView" destination="pbe-m5-pEx" id="4Sy-fJ-2lR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuf-Fc-Hgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="-192"/>
+        </scene>
+    </scenes>
+</document>
