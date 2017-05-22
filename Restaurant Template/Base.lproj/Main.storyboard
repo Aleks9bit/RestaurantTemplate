@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F67a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -214,7 +214,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-J9-FVm">
                                                     <rect key="frame" x="0.0" y="277.5" width="246.5" height="50"/>
                                                     <subviews>
-                                                        <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6M-hr-8C5" customClass="UIVisualEffectViewExtension" customModule="Restaurant_Template" customModuleProvider="target">
+                                                        <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6M-hr-8C5" customClass="UIVisualEffectViewExtension" customModule="Restaurant_Template" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="246.5" height="50"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dAQ-2c-E8i">
                                                                 <rect key="frame" x="0.0" y="0.0" width="246.5" height="50"/>
@@ -308,7 +308,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-6u-AZa">
-                                                    <rect key="frame" x="16" y="16" width="49" height="27"/>
+                                                    <rect key="frame" x="16" y="16" width="46" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="27" id="wqT-f4-fsI"/>
                                                     </constraints>

@@ -27,7 +27,11 @@ class MapView: MKMapView {
                     let coordinateRegion = MKCoordinateRegionMakeWithDistance(coordinate, 1000, 1000)
 
                     self.setRegion(coordinateRegion, animated: true)
+                  if #available(iOS 10.0, *) {
                     self.addAnnotation(MKPlacemark(coordinate: coordinate))
+                  } else {
+                    // Fallback on earlier versions
+                  }
                 }
                 self.placemark = placemark
             }

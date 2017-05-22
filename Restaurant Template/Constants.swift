@@ -110,7 +110,7 @@ let infoModel = [
                 "menuIcon": "url",
                 "mainIcon": "urlWhite",
                 "images": ["myAccount"],
-                "url": "http://\(constWebsite)/.login.php"
+                "url": "http://\(constWebsite)/login.php"
             ],
 //            [
 //                "name": "Weekday Specials",
